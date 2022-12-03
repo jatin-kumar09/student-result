@@ -1,7 +1,7 @@
 const express=require('express');
 const app=express();
 
-const port=5000;
+const port=process.env.PORT || 5000;
 const mongoose=require('mongoose'); //connecting to mongodb
 
 //connect to mongodb and listening for requests
